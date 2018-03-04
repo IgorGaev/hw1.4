@@ -1,15 +1,14 @@
 <?php
-//$city = 'Moscow';
-//define("LINK", "http://api.openweathermap.org/data/2.5/weather?q=$city&units=metric&APPID=bbc7ff8c01ce37372a6d27feac90261a" );
-//$data = file_get_contents(LINK);
-//$weather = json_decode($data, true);
-//
-//$temperature = $weather['main']['temp'];
-//$humidity = $weather['main']['humidity'];
-//$wind_speed = $weather['wind']['speed'];
-//
-//
-//?>
+$city = 'Moscow';
+define("LINK", "http://api.openweathermap.org/data/2.5/weather?q=$city&units=metric&APPID=bbc7ff8c01ce37372a6d27feac90261a" );
+$data = file_get_contents(LINK);
+$weather = json_decode($data, true);
+
+$temperature = $weather['main']['temp'];
+$humidity = $weather['main']['humidity'];
+$wind_speed = $weather['wind']['speed'];
+
+?>
 
 
 <!doctype html>
